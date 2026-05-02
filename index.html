@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>天坛文创 WebAR</title>
-    <link rel="stylesheet" href="./styles.css?v=alpha1" />
+    <link rel="stylesheet" href="./styles.css?v=anchor4" />
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
@@ -24,7 +24,7 @@
         embedded>
         <a-assets>
           <img id="targetImage" src="./assets/tiantan-main-target-light.jpg" alt="" />
-          <img id="standeesImage" src="./assets/tiantan-standees-upright.png" alt="" />
+          <img id="standeesImage" src="./assets/tiantan-standees-upright-clean.png" alt="" />
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -32,7 +32,7 @@
         <a-entity mindar-image-target="targetIndex: 0">
           <a-entity
             id="popStage"
-            position="0 -0.04 0.012"
+            position="0 -0.18 0.018"
             rotation="-90 0 0"
             scale="0.001 0.001 0.001"
             animation__rise="property: scale; to: 0.28 0.28 0.28; dur: 950; easing: easeOutBack; startEvents: targetFound"
@@ -45,16 +45,10 @@
               animation__float="property: position; dir: alternate; dur: 2200; easing: easeInOutSine; loop: true; to: 0 0.68 0">
             </a-plane>
           </a-entity>
-          <a-plane
-            width="0.66"
-            height="0.025"
-            position="0 -0.04 0.004"
-            material="color: #10131b; transparent: true; opacity: 0.35; side: double">
-          </a-plane>
         </a-entity>
       </a-scene>
     </main>
 
-    <script src="./script.js?v=alpha1"></script>
+    <script src="./script.js?v=anchor4"></script>
   </body>
 </html>
