@@ -18,6 +18,23 @@ a-scene {
   height: 100%;
 }
 
+.ar-shell,
+a-scene,
+a-scene canvas {
+  position: fixed;
+  inset: 0;
+  background: transparent !important;
+}
+
+video {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  background: #10131b !important;
+}
+
 .status {
   position: fixed;
   z-index: 10;
@@ -43,6 +60,19 @@ a-scene {
 .status span {
   font-size: 13px;
   color: rgba(246, 234, 210, 0.82);
+}
+
+.status button {
+  justify-self: start;
+  min-height: 34px;
+  margin-top: 4px;
+  padding: 0 12px;
+  border: 1px solid rgba(215, 181, 109, 0.55);
+  border-radius: 6px;
+  background: rgba(215, 181, 109, 0.18);
+  color: #f6ead2;
+  font: inherit;
+  font-size: 13px;
 }
 
 .preview-body {
