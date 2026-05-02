@@ -17,7 +17,7 @@ fetch("./assets/tiantan-main-target.mind", { method: "HEAD" }).catch(() => {
 });
 
 scene.addEventListener("arReady", () => {
-  const wechatNote = isWechat ? "如果画面仍是黑色，请点右上角菜单，用 Safari 或系统浏览器打开。" : "把镜头对准书中的长卷主图，队伍会从页面中立起来。";
+  const wechatNote = isWechat ? "请后退一点，让整张长卷和周边环境都入镜；如果仍是黑屏，请用 Safari 打开。" : "请后退一点，让整张长卷和周边环境都入镜，队伍会从页面中立起来。";
   setStatus("摄像头已启动", wechatNote, '<button type="button" id="retryCamera">重新加载摄像头</button>');
 });
 
@@ -32,7 +32,7 @@ target.addEventListener("targetFound", () => {
 });
 
 target.addEventListener("targetLost", () => {
-  setStatus("正在寻找长卷", "保持整张长卷入镜，避免反光和过暗。");
+  setStatus("正在寻找长卷", "把手机拿远一些，保持整张长卷和书页边缘都入镜，避免反光和过暗。");
   popStage.emit("targetLost");
 });
 

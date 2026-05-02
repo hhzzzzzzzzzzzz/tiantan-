@@ -32,6 +32,7 @@ a-scene {
 
 a-scene canvas {
   z-index: 2;
+  object-fit: contain !important;
 }
 
 video {
@@ -39,7 +40,7 @@ video {
   inset: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   background: #10131b !important;
   z-index: 0 !important;
 }
