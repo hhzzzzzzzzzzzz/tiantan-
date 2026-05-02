@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>天坛文创 WebAR</title>
-    <link rel="stylesheet" href="./styles.css?v=anchor4" />
+    <link rel="stylesheet" href="./styles.css?v=stable1" />
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
@@ -16,7 +16,7 @@
       </div>
 
       <a-scene
-        mindar-image="imageTargetSrc: ./assets/tiantan-main-target.mind; filterMinCF: 0.0001; filterBeta: 0.001"
+        mindar-image="imageTargetSrc: ./assets/tiantan-main-target.mind; filterMinCF: 0.00001; filterBeta: 0.0001; warmupTolerance: 10; missTolerance: 18"
         color-space="sRGB"
         renderer="alpha: true; antialias: true; colorManagement: true, physicallyCorrectLights"
         vr-mode-ui="enabled: false"
@@ -32,10 +32,10 @@
         <a-entity mindar-image-target="targetIndex: 0">
           <a-entity
             id="popStage"
-            position="0 -0.18 0.018"
+            position="0 -0.08 0.018"
             rotation="-90 0 0"
             scale="0.001 0.001 0.001"
-            animation__rise="property: scale; to: 0.28 0.28 0.28; dur: 950; easing: easeOutBack; startEvents: targetFound"
+            animation__rise="property: scale; to: 0.44 0.44 0.44; dur: 950; easing: easeOutBack; startEvents: targetFound"
             animation__hide="property: scale; to: 0.001 0.001 0.001; dur: 260; easing: easeInQuad; startEvents: targetLost">
             <a-plane
               width="2.35"
@@ -49,6 +49,6 @@
       </a-scene>
     </main>
 
-    <script src="./script.js?v=anchor4"></script>
+    <script src="./script.js?v=stable1"></script>
   </body>
 </html>

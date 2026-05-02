@@ -32,7 +32,6 @@ a-scene {
 
 a-scene canvas {
   z-index: 2;
-  object-fit: contain !important;
 }
 
 video {
