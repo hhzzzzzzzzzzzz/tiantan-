@@ -18,6 +18,32 @@ a-scene {
   height: 100%;
 }
 
+.ar-shell,
+a-scene,
+a-scene canvas {
+  position: fixed;
+  inset: 0;
+  background: transparent !important;
+}
+
+a-scene {
+  z-index: 1;
+}
+
+a-scene canvas {
+  z-index: 2;
+}
+
+video {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  background: #10131b !important;
+  z-index: 0 !important;
+}
+
 .status {
   position: fixed;
   z-index: 10;
