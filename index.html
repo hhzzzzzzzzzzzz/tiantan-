@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>天坛文创 WebAR</title>
-    <link rel="stylesheet" href="./styles.css?v=popup2" />
+    <link rel="stylesheet" href="./styles.css?v=popup3" />
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
@@ -34,8 +34,8 @@
 
           <a-entity
             id="popStage"
-            position="0 -0.18 0.02"
-            rotation="-90 0 0"
+            position="0 0.18 0.02"
+            rotation="90 0 0"
             scale="0.001 0.001 0.001"
             animation__rise="property: scale; to: 0.82 0.82 0.82; dur: 950; easing: easeOutBack; startEvents: targetFound"
             animation__hide="property: scale; to: 0.001 0.001 0.001; dur: 260; easing: easeInQuad; startEvents: targetLost">
@@ -53,6 +53,6 @@
       </a-scene>
     </main>
 
-    <script src="./script.js?v=popup2"></script>
+    <script src="./script.js?v=popup3"></script>
   </body>
 </html>
